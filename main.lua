@@ -49,7 +49,7 @@ local function format(tab)
             result = result .. string.format("\n'Index: %s' | 'Value: %s', ", tostring(index), tostring(value))
         end
     end
-    result = result:sub(1, -3) .. "},\n" 
+    result = result:sub(1, -3) .. "\n},\n" 
     return result
 end
 
