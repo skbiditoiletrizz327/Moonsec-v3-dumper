@@ -1,7 +1,7 @@
 local old = unpack
 local old_append = appendfile 
 
-local output = "example.txt"
+local output = "yes.txt"
 
 local Credits = "\n"..[[
 
@@ -71,7 +71,6 @@ function unpack(...)
     end 
     return old(...)
 end 
-
 
 
 --[[ Script ]]-- 
