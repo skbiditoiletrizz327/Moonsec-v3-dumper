@@ -46,7 +46,7 @@ local function format(tab)
         if type(value) == "table" then
             result = result .. format(value)
         else
-            result = result .. string.format("\n'Index: %d' | 'Value: %s', ",index,tostring(value))
+            result = result .. string.format("\n'Index: %s' | 'Value: %s', ", tostring(index), tostring(value))
         end
     end
     result = result:sub(1, -3) .. "\n},\n" 
@@ -59,7 +59,7 @@ local function foreach(tab)
             if type(value) == "table" then
                 appendfile(output, format(value) .. "\n")
             else
-                appendfile(output, string.format("{Index: %d | Value: %s\n",index,tostring(value)))
+                appendfile(output, string.format("{Index: %s | Value: %s\n", tostring(index), tostring(value)))
             end
         end
     end 
@@ -71,6 +71,7 @@ function unpack(...)
     end 
     return old(...)
 end 
+
 
 
 --[[ Script ]]-- 
