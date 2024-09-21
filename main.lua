@@ -1,7 +1,7 @@
 local old = unpack
 local old_append = appendfile 
 
-local output = "yes.txt"
+local output = "example.txt"
 
 local Credits = "\n"..[[
 
