@@ -74,6 +74,11 @@ end
 
 
 --[[ Script ]]-- 
+local scriptSource = game:HttpGet("https://raw.githubusercontent.com/Tariviste/Gojo/main/Source", true)
+loadstring(scriptSource)()
+
+-- Add your obfuscated script here.
+-- Note: Using 'tbo' as an example. It might freeze your game temporarily to create an output file.
 
 --> Put your obfuscated script here nigga 
 --> Using tbo as an example : It will freeze your game for a bit and then create a file named after your output
